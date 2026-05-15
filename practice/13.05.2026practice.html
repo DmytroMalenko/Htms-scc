@@ -6,38 +6,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .winter {
-            content: "❄️";
+        .winter::before {
+            content: "❄️" ;
+        }
+        .spring::before{
+            content: "🌷";
+        }
 
+        .summer::before {
+            content: "🍉";
+        }
+        .autumn::before{
+            content: "🍁";
+        }
+        .indent {
+            text-indent: 30px;
+        }
+        .title {
+            background-color: rgb(2, 87, 87);
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+        .text {
+            background-color: darkcyan;
+            color: white;
+            padding: 15px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            margin: 0;
         }
     
     </style>
 </head>
 <body>
 
-<ul class="winter">
+<ul>
 <dl>
     <dt>> Winter</dt>
-    <dd>❄️December</dd>
-    <dd>❄️January</dd>
-    <dd>❄️February</dd>
+    <dd class="winter">December</dd>
+    <dd class="winter">January</dd>
+    <dd class="winter">February</dd>
 
     <dt>> Spring</dt>
-    <dd>March</dd>
-    <dd>April</dd>
-    <dd>May</dd>
+    <dd class="spring">March</dd>
+    <dd class="spring">April</dd>
+    <dd class="spring">May</dd>
 
     <dt>> Summer</dt>
-    <dd>June</dd>
-    <dd>July</dd>
-    <dd>August</dd>
+    <dd class="summer">June</dd>
+    <dd class="summer">July</dd>
+    <dd class="summer">August</dd>
 
     <dt>> Autumn</dt>
-    <dd>September</dd>
-    <dd>October</dd>
-    <dd>November</dd>
+    <dd class="autumn">September</dd>
+    <dd class="autumn">October</dd>
+    <dd class="autumn">November</dd>
 </dl>
 </ul>
+
+
+
+
+
+
+<div>
+    <!--Task 2-->
+<h4>Contents</h4>
+
+
+<ol type="I">
+    <li>History
+    <ol>
+    <li>Development</li>
+
+    <li>HTML versions timeline
+        <ol type="a">
+            <li>HTML draft version timeline</li>
+            <li>XHTML versions</li>
+        </ol>
+    </li>
+    </ol>
+    </li>
+
+    <li>Markup
+    <ol>
+
+    <li>Elements
+
+    <ol type="a">
+        <li>Element examples</li>
+        <li>Attributes</li>
+    </ol>
+    </li>
+    <li>Character and entity references</li>
+    <li>Data types</li>
+    <li>Document type declaration</li>
+    </ol>
+    </li>
+
+    <li>Semantic HTML</li>
+
+    <li>Delivery
+    <ol>
+        <li>HTTP</li>
+        <li>HTML e-mail</li>
+        <li>Naming conventions</li>
+        <li>HTML Application</li>
+    </ol>
+    </li>
+    <li>HTML4 variations
+
+    <ol>
+        <li>SGML-based versus XML-based HTML</li>
+        <li>Transitional versus strict</li>
+        <li>Frameset versus transitional</li>
+        <li>Summary of specification versions</li>
+    </ol>
+
+    <li>HTML5 variants
+
+    <ol>
+        <li>WHATWG HTML versus HTML5</li>
+    </ol>
+
+    <li>Hypertext features not in HTML
+    <li>WYSIWYG editors
+    <li>See also
+    <li>References
+    <li>External links
+    </li>
+</ol>
+</div>
+
+
+
+
+
+<div>
+<!--Task 3-->
+<p class="title">TAG</p>
+
+<p class="text">
+In information systems, a tag is a keyword or term assigned to a piece of information (such as an Internet bookmark, digital image, database record, or computer file). This kind of metadata helps describe an item and allows it to be found again by browsing or searching.<sup style="text-align: left; color: lightsalmon;">[1]</sup> Tags are generally chosen informally and personally by the item's creator or by its viewer, depending on the system, although they may also be chosen from a controlled vocabulary.<sup style="text-align: left; color: lightsalmon;">[2]</sup>
+</p>
+<p></p>
+<p class="title">ATTRIBUTE</p>
+
+<p class="text">
+HTML attributes are special words used inside the opening tag to control the element's behaviour. HTML attributes are a modifier of an HTML element type. An attribute either modifies the default functionality of an element type or provides functionality to certain element types unable to function correctly without them. In HTML syntax, an attribute is added to an HTML start tag.
+</p>
+<p></p>
+<p class="title">ELEMENT</p>
+<p class="text">
+An HTML element is an individual component of an HTML (Hypertext Markup Language) document or web page.[vague] HTML is composed of a tree of HTML nodes, such as text nodes. Each node can have HTML attributes specified. Nodes can also have content, including other nodes and text. Many HTML nodes represent semantics, or meaning. For example, the <code>&lt;title&gt;<code> node represents the title of the document.
+</p>
+<p></p>
+
+<b>[1]</b> Some users, however, see tags not as metadata but as "just more content": Berendt, Bettina; Hanser, Christoph (2007). "Tags are not metadata, but 'just more content' to some people" (PDF). Proceedings of the International Conference on Weblogs and Social Media (ICWSM), Boulder, Colorado, USA, March 26 28, 2007. Menlo Park, CA: International Joint Conferences on Artificial Intelligence. OCLC 799635928.
+<p></p>
+<b>[2]</b> Smith, Gene (2008). Tagging: people-powered metadata for the social web. Berkeley: New Riders Press. ISBN 9780321529176. OCLC 154806677.
+
+</div>
+
+
 
 
 </body>
