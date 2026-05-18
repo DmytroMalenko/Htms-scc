@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../python_bot"
+		},
+		{
+			"path": "../../../../python_core"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Htms scc"
+	}
+}
