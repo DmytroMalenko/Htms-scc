@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .border {
+        text-align: center;
+        width: 300px;
+        border: solid orange 5px;
+        height: 10px;
+        margin: auto;
+        padding: 30px;
+        }
+
+    .block {
+
+        width: 40px;
+        background-color: orange;
+        height: 40px;
+        margin: -35px;
+        padding: 20px;
+        animation-name: block-anim;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite; 
+    }
+
+    @keyframes block-anim { 
+        50% {
+            transform: translate(290px,0);
+            }
+
+    }
+
+    .heart {
+        width: 100px;
+        transition: 5s;
+    }
+
+
+    .heart:hover{
+        transform: scale(2);
+        content: url("./resurces/Screenshot\ 2026-05-20\ 175805.png");
+
+
+    }
+
+    
+    @keyframes heart-anim{
+
+    0%{
+        transform: scale(1);
+        filter: grayscale(100%);
+    }
+
+    100%{
+        transform: scale(2);
+        filter: grayscale(0%);
+    }
+    }
+
+    .icons {
+        text-align: center;
+        background-color: #fcfad3;
+        padding: 30px;
+    }
+
+    .img {
+        width: 100px;
+        margin: 10px;
+
+    }
+
+    .img1 { animation: anim1 2s forwards; animation-delay: 0s; }
+    .img2 { animation: anim2 2s forwards; animation-delay: 0.5s; }
+    .img3 { animation: anim3 2s forwards; animation-delay: 1s; }
+    .img4 { animation: anim4 2s forwards; animation-delay: 1.5s; }
+    .img5 { animation: anim5 2s forwards; animation-delay: 2s; }
+
+    @keyframes anim1 {
+        0% { transform: translateY(200px) rotate(-20deg); }
+        100% {transform: translateY(0) rotate(-20deg); }
+    }
+    @keyframes anim2 {
+        0% { transform: translateY(200px) rotate(-10deg); }
+        100% {transform: translateY(0) rotate(-10deg); }
+    }
+    @keyframes anim3 {
+        0% { transform: translateY(200px) rotate(10deg); }
+        100% {transform: translateY(0) rotate(10deg); }
+    }
+    @keyframes anim4 {
+        0% { transform: translateY(200px) rotate(20deg); }
+        100% {transform: translateY(0) rotate(20deg); }
+    }
+
+    @keyframes anim5 {
+        0% { transform: translateY(200px) rotate(0deg); }
+        100% {transform: translateY(0) rotate(0deg); }
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <!-- Task 1-->
+<div class="border">
+<div class="block"></div>
+</div>
+    </div>
+    
+
+<div>
+    <!-- Task 2 -->
+
+<div>
+<button><img class="heart" src="./resurces/favorites.png" alt=""></button>
+
+
+
+
+
+</div> <!-- Task 3-->
+
+<h2 style="text-align: center; background-color: #fcfad3; margin: 0px;">HELLO, MY SIZE!</h2>
+
+<div class="icons" style="text-align:center; background-color:#fcfad3; padding:30px;">
+<span><img  class="img img1" src="./resurces/calc.png" alt=""></span>
+<span><img class="img img2" src="./resurces/book.png" alt=""></span>
+<span><img class="img img3" src="./resurces/paper.png" alt=""></span>
+<span><img class="img img4" src="./resurces/pallete.png" alt=""></span>
+<div><img class="img img5" src="./resurces/pencil.png" alt=""></div>
+
+    </div>
+</div>
+</body>
+</html>
