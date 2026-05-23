@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        td > img {
+            width: 150px;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0.3em;
+        }
+            
+        td:first-child {
+            text-align: center;
+        }
+        
+
+        th, td {
+            border: 1px solid black;
+            padding: 0.4em;
+        }
+            
+        tr:not(:first-child) {
+            height: auto;
+        }
+        
+        tr {
+            height: 150px;
+        } 
+
+        thead {
+            background-color: aquamarine;
+        }
+        tfoot {
+            text-align: center;
+            background-color: aqua;
+        }
+        tfoot > tr {
+            padding: 0;
+        }
+        .hightlight{
+            background-color: cornflowerblue;
+        }
+
+        .empty-cells-table {
+            border-collapse: separate;
+            empty-cells: hide;
+        }
+            */
+
+        table {
+            width: 80%;
+            min-width: 650px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            text-transform: uppercase;
+            text-align: right;
+            color: #666666;
+            font-weight: bold;
+        }
+
+        th {
+            text-transform: uppercase;
+            color: white;
+            text-align: center;
+        }
+
+        th:first-child{
+            color: gray;
+        }
+
+        td:first-child {
+            text-align: left;
+            color: gray;
+            padding-left: 0.7em;
+        }
+
+        span {
+            border: 2px white solid;
+            border-radius: 100%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+        }
+
+        td {
+            text-align: center;
+            color: white;
+        }
+        .col-1 {
+            background-color: #8a8a8a;
+            width: auto;
+        }
+
+        .col-2 {
+            background-color: aqua;
+            width: 17%;
+        }
+
+        .col-3 {
+            background-color: aquamarine;
+            width: 17%;
+        }
+        .col-4 {
+            background-color: rgb(101, 161, 135);
+            width: 17%;
+        }
+        .col-5 {
+            background-color: coral;
+            width: 17%;
+        }
+
+        tfoot {
+            border-top: solid 1px white;
+        }
+
+        thead {
+            border-bottom: solid 1px white;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<table>
+    <caption>Customers</caption>
+    <colgroup>
+        <col>
+        <col class="hightlight">
+        <col>
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th>Avatar</th>
+            <th>Name</th>
+            <th>E-mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img src="./resurces/cat_box_64.png" alt="blue avatar"></td></tr>
+            <td><span>Mr. Blue</span></td>
+            <td><a href="mailo:mr.blue@gmail.com">mailo:mr.blue@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td><img src="./resurces/cat_eyes_64.png" alt="not blue avatar"></td>
+            <td><span>Mr. Not Blue</span></td>
+            <td><a href="mailo:mr.blue@gmail.com">mailo:mr.blue@gmail.com</a></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"><p>It's fyter of tables </p></td>
+        </tr>
+    </tfoot>
+</table>
+<table>
+    <tr>
+        <th colspan="2">Full name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>
+            Jill
+        </td>
+        <td>Smith</td>
+        <td>43</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>57</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Name</th>
+        <td>Jill Smith</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+    </tr>
+    <tr>
+        <td>555-8745</td>
+    </tr>
+</table>
+<table class="empty-cells-table">
+    <tr>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+    </tr>
+    <tr>
+        <td>Lorem, ipsum.</td>
+        <td>Lorem ipsum dolor sit.</td>
+        <td>Lorem, ipsum dolor.</td>
+    </tr>
+    <tr>
+
+        <td></td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td></td>
+    </tr>
+</table>
+
+<table>
+    <caption>title table</caption>
+    <colgroup>
+    <col class="col-1">
+    <col class="cool-2">
+    <col class="col-3">
+    <col class="col-4">
+    <col class="col-5">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th>specification</th>
+            <th>free</th>
+            <th>basic</th>
+            <th>standard</th>
+            <th>premium</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+        </tr>
+                <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><span>-</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+        </tr>
+                <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><span>-</span></td>
+            <td><span>-</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><span>-</span></td>
+            <td><span>-</span></td>
+            <td><span>-</span></td>
+            <td><span>+</span></td>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><span>-</span></td>
+            <td><span>-</span></td>
+            <td><span>-</span></td>
+            <td><span>+</span></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>total</th>
+            <td>$ 0.00</td>
+            <td>$ 0.99</td>
+            <td>$ 19.99</td>
+            <td>$ 29.99</td>
+        </tr>
+    </tfoot>
+
+
+
+
+
+</table>
+
+
+
+
+</body>
+</html>

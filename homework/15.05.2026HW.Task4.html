@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        footer {
+            background-color: #2b4f6f ;
+            color: white;
+            width: 700px;
+            margin: auto;
+            padding: 60px;
+        }
+        .column{
+            display: inline-block;
+            margin-right: 100px;
+            vertical-align: top;
+        }
+
+        ol {
+        list-style: none;
+        }
+
+        img:hover{
+            opacity: 0.7;
+            cursor: pointer;
+        }
+        li:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .social{
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .icon{
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin-right: 10px;
+            background-size: cover;
+        }
+        .facebook{
+            background-image: url("resurces/fb_gray.png");
+        }
+        .facebook:hover{
+            background-image: url("resurces/fb.png");
+        }
+        .instagram{
+            background-image: url("resurces/insta_gray.png");
+        }
+        .instagram:hover{
+            background-image: url("resurces/insta.png");
+        }
+        .youtube{
+            background-image: url("resurces/youtube_gray.png");
+        }
+        .youtube:hover{
+            background-image: url("resurces/youtube.png");
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="column">
+            <ol>
+                <li>Home</li>
+                <li>About</li>
+                <li>Gallery</li>
+                <li>News</li>
+            </ol>
+
+        </div>
+        <div class="column">
+            <ol class="float-right">
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Contacts</li>
+                <li>Privaty & cookies</li>
+            </ol>
+        </div>
+
+        <div class="social">
+            <div class="icon facebook"></div>
+            <div class="icon instagram"></div>
+            <div class="icon youtube"></div>
+        </div>
+        <hr>
+        <p></p>
+        <div style="text-align: center;"><small>Copyright © Comoany 2018 - 2019</small></div>
+    </footer>
+</body>
+</html>
