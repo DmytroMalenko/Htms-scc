@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .div-demo {
+            background-color: darksalmon;
+            border: solid black 2px;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+        }
+        .pov-stat {
+            position: static;
+        }
+        h1, h2 {
+            margin: 10px;
+        }
+
+        .pos-rel {
+            position: relative;
+            left: 50px; 
+            /* right: 60px; */
+            top: 100px;
+        }
+
+        .pos-fixed {
+            position: fixed;
+            top: 500px;
+            right: 200px;
+        }
+        .top-fixed {
+            position: fixed;
+            top: 0;
+        }
+
+        .rel-parent {
+            width: 400px;
+            height: 150px;
+            border: solid 1px black;
+            position: relative;
+            left: 25px;
+        }
+
+        .pos-abs {
+            position: absolute;
+            left: 50px;
+        }
+
+        .pos-stiky {
+            position: sticky;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <h2>Static position</h2>
+    <div class="div-demo pos-stat">position:static;</div>
+
+    <h2>Vidnosne position</h2>
+    <div class="div-demo pos-rel">position: relative;</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, atque veniam unde, minima tempore vel nesciunt at a veritatis, praesentium quos amet! Itaque facilis dolore tenetur vel commodi repudiandae earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, asperiores itaque! Ipsam nisi praesentium cum obcaecati officiis accusamus harum vitae?</p>
+
+    <div class="div-demo pos-fixed">position: fixed;</div>
+
+    <div class="div-demo top-fixed">fixed on the top</div>
+
+    <div class="rel-parent">
+        <div class="div-demo pos-abs">position: absolute;</div>
+    </div>
+
+    <!-- <div  class="div-demo pos-abs">position: absolute;</div> -->
+
+    <div class=" div-demo pos-sticky">position: sticky;</div>
+
+
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis similique incidunt doloribus modi tenetur quia accusantium, sed voluptate nisi voluptatum enim temporibus nostrum laboriosam obcaecati, fuga delectus libero inventore maxime animi? Obcaecati, illo ipsum eligendi incidunt nemo totam aspernatur culpa deserunt. Necessitatibus vero mollitia earum harum tempora officiis rem. Autem quo quae facilis cumque, magnam impedit veniam, aliquam totam perspiciatis odit dolore vitae, maxime in ipsum deleniti expedita consequatur accusamus sapiente blanditiis ipsam ad sint? Sequi possimus cupiditate nostrum dolores aliquam nulla ullam sapiente consectetur aut vel voluptatum ad provident consequatur corporis, fugit ab autem iste maiores illo distinctio. Voluptatibus expedita non corporis. Consectetur cum deserunt nobis omnis corrupti perspiciatis pariatur, maxime dicta modi blanditiis dolores magni veritatis numquam facilis ratione molestiae excepturi commodi, maiores sunt. Ullam, odio ipsam? Nihil a laborum rerum voluptatem modi eum delectus dolore quia est.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, possimus est? Ex libero, consectetur magnam quo animi enim sit repellat beatae reiciendis sed id ut aliquid facilis hic error. Mollitia quia ratione illo eligendi ipsum! Dicta tempora doloremque assumenda. Praesentium doloremque temporibus incidunt nisi quo, tempora aliquid cupiditate vel fugit dolorum hic vero explicabo eius? Cupiditate est exercitationem voluptatum consectetur, dolorum, deserunt asperiores quaerat vero beatae culpa repudiandae deleniti! Maiores saepe voluptatum debitis est et, harum sequi, quos aperiam voluptas inventore, iure incidunt? Nisi tempore explicabo autem, voluptatibus iure eaque.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia iusto facere odio assumenda! Numquam, quis dolores. Fuga nam iste nulla adipisci. Pariatur, natus! Dolorum, asperiores minima. Eius ad deserunt modi animi. Nesciunt tenetur illum, harum quae neque excepturi consequatur quia minima totam culpa corrupti quo. Repudiandae, quos nulla? Quo deleniti, nesciunt necessitatibus exercitationem, qui nisi omnis nam unde ex accusantium alias ut saepe deserunt itaque velit, a labore totam. Fuga optio praesentium sed dolorem nam aperiam, voluptates facere nemo sapiente culpa incidunt vitae repellendus voluptate enim error cumque reiciendis quisquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus necessitatibus incidunt alias, eius quis expedita, placeat perferendis sapiente deleniti nemo nulla laboriosam deserunt consequuntur impedit! Cum non quos similique sapiente, necessitatibus sed voluptatibus explicabo veritatis? Necessitatibus quas dolor rem autem?</p>
+</body>
+</html>

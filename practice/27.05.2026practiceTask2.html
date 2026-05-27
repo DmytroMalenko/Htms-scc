@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .menu {
+            display: flex;
+        }
+        .home, .categories, .about, .contacts {
+            position: relative;
+            width: 150px;
+            height: 30px;
+
+            background-color: #4c996b;
+            text-align: center;
+            padding-top: 15px;
+            color: white;
+            border-right: 1px solid #3f8059;
+             cursor: pointer;
+
+        }
+        .hidden-elem {
+            top: 45px;
+            left: 0;
+            display: none;
+            position: absolute;
+            width: 150px;
+            height: 70px;
+            padding-top: 10px;
+            background-color: #4c996b;
+            cursor: pointer;
+        }
+        .categories:hover .hidden-elem {
+            display: block;
+        }
+        .home:hover, .about:hover, .contacts:hover, .categories:hover, .hidden-elem > div:hover{
+            background-color: #3f8059;
+        }
+        .women {
+            position: relative;
+        }
+        .hidden-elem2{
+            display:none;
+            position:absolute;
+            left:150px;
+            top:0;
+            width:150px;
+            background-color: #4c996b;
+            z-index: 100;
+        }
+
+        .hidden-elem2 div{
+            padding: 10px;
+            cursor: pointer;
+            
+        }
+        .women:hover .hidden-elem2{
+            display:block;
+        }
+
+        .hidden-elem2 div:hover{
+            background-color: #3f8059;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <!-- Task 2 -->
+        <div class="menu">
+            <div class="home">Home</div>
+            <div class="categories">Categories
+                <div class="hidden-elem">
+                    <div>Man</div>
+                    <div class="women">Women
+                        <div class="hidden-elem2">
+                            <div>Dress</div>
+                            <div>Pants</div>
+                            <div>Shoes</div>
+                        </div>
+                    </div>
+                    <div>Kids</div>
+                </div>
+            </div>
+            <div class="about">About</div>
+            <div class="contacts">Contacts</div>
+        </div>
+        <p></p>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, modi rerum illum voluptatum placeat enim facilis repudiandae veritatis laboriosam, quod error laudantium! Ratione vel atque dolores nobis tenetur cupiditate adipisci, deserunt est in voluptatibus. Maxime, cum adipisci? Aperiam, aspernatur? Rerum sunt suscipit commodi soluta iusto dignissimos dolorum veniam vero minus, quibusdam pariatur dolores delectus? Sequi praesentium omnis molestiae accusantium ipsam expedita ab, nobis iusto laudantium incidunt nesciunt consequatur a libero quo, eligendi nemo eos fuga debitis. Odio at perspiciatis possimus eum mollitia in sapiente explicabo illum cum dolorem accusantium, eveniet inventore doloremque eligendi porro, soluta vel tenetur eos. Eos, debitis.</div>
+    </div>
+</body>
+</html>
