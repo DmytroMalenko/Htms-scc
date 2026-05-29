@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+           box-sizing: border-box; 
+        }
+        body {
+            height: 100vh;
+        }
+        .width-demo {
+            min-width: 500px;
+            max-width: 900px;
+            width: 80%;
+            min-height: 100%;
+            margin: auto;
+            background-color: rgb(140, 140, 190);
+        }
+        .bordered {
+            width: 500px;
+            height: 200px;
+            border: solid 2px black 5px;
+            padding: 20px;
+        }
+
+
+        .overflow-auto {
+            overflow: auto;
+            margin-top: 50px;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+            margin-top: 50px;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+            margin-top: 50px;
+        }
+
+
+        .container {
+            border: solid 1px black;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 10px;
+            background-color: cadetblue;
+            overflow: in;
+        }
+
+        .picture{
+            width: 100px;
+            height: 120px;
+            padding: 5px;
+            margin: 10px;
+            background-color: crimson;
+            float: left;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="width-demo">
+        <div class="container">
+            <div class="picture">float: right;</div>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maiores aperiam consectetur quibusdam animi totam recusandae eius sint ad ea, dolorum laborum dolore cupiditate vel natus incidunt consequatur! Et dolor amet sint tempora aut consequuntur qui nesciunt a, iusto magni vel eveniet distinctio, est minus atque pariatur repellat, vero non possimus! Rerum in doloribus quas, quo cupiditate quibusdam tempore itaque earum. Pariatur itaque, voluptatum molestias sit commodi fugit? Dolorum, saepe ratione aliquid sed officiis accusamus consequuntur voluptatem id, iste in quia fugiat omnis explicabo. Sint omnis fugit dolor atque ullam!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia accusamus perferendis reiciendis aperiam. Eos recusandae hic quod ipsam quibusdam, alias quia veritatis officia exercitationem molestiae praesentium fugiat debitis! Fuga, illo.</p>
+        </div>
+
+        <p>lorem200</p>
+
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est excepturi accusantium aut repellendus. Minus accusantium eligendi unde nesciunt excepturi! Quasi commodi sint tempore, eum eius repellendus, ad rerum iusto soluta itaque nam earum incidunt recusandae obcaecati libero temporibus? Earum, quia illum delectus sequi beatae minima veritatis animi ea placeat eligendi aperiam quo eveniet modi blanditiis totam, quam consequuntur perferendis ullam inventore in vel incidunt, consectetur facilis! Numquam asperiores perferendis ullam dolorum eum officia cum vel voluptatum excepturi aspernatur veritatis officiis quibusdam obcaecati qui minima, nesciunt illo consequatur odio! Nemo, aperiam!</p>
+
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- <div class="bordered">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque et quasi perspiciatis minima molestiae consequuntur eos at alias sunt qui exercitationem officia libero eaque quisquam velit mollitia veniam corporis deleniti nulla delectus iure, earum quod! Odio laboriosam mollitia, molestias reiciendis sunt, tenetur provident voluptatum incidunt accusamus amet laborum accusantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita quod magnam eaque asperiores autem, ipsum dignissimos temporibus eum cum tempore architecto omnis culpa esse recusandae non sapiente dicta. Hic incidunt sequi iusto nulla fugit reprehenderit distinctio perspiciatis, maiores dolore, laborum nihil labore officia, autem vel enim quas. Quo corrupti dicta reiciendis earum quae pariatur sint maxime consequuntur repellendus rerum provident itaque, doloremque reprehenderit porro adipisci ullam, repellat eveniet! Temporibus pariatur autem architecto ad sed optio quod placeat atque adipisci!
+            </p>
+        </div>
+
+
+        <div class="bordered overflow-auto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque et quasi perspiciatis minima molestiae consequuntur eos at alias sunt qui exercitationem officia libero eaque quisquam velit mollitia veniam corporis deleniti nulla delectus iure, earum quod! Odio laboriosam mollitia, molestias reiciendis sunt, tenetur provident voluptatum incidunt accusamus amet laborum accusantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita quod magnam eaque asperiores autem, ipsum dignissimos temporibus eum cum tempore architecto omnis culpa esse recusandae non sapiente dicta. Hic incidunt sequi iusto nulla fugit reprehenderit distinctio perspiciatis, maiores dolore, laborum nihil labore officia, autem vel enim quas. Quo corrupti dicta reiciendis earum quae pariatur sint maxime consequuntur repellendus rerum provident itaque, doloremque reprehenderit porro adipisci ullam, repellat eveniet! Temporibus pariatur autem architecto ad sed optio quod placeat atque adipisci!
+            </p>
+        </div>
+
+
+        <div class="bordered overflow-hidden">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque et quasi perspiciatis minima molestiae consequuntur eos at alias sunt qui exercitationem officia libero eaque quisquam velit mollitia veniam corporis deleniti nulla delectus iure, earum quod! Odio laboriosam mollitia, molestias reiciendis sunt, tenetur provident voluptatum incidunt accusamus amet laborum accusantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita quod magnam eaque asperiores autem, ipsum dignissimos temporibus eum cum tempore architecto omnis culpa esse recusandae non sapiente dicta. Hic incidunt sequi iusto nulla fugit reprehenderit distinctio perspiciatis, maiores dolore, laborum nihil labore officia, autem vel enim quas. Quo corrupti dicta reiciendis earum quae pariatur sint maxime consequuntur repellendus rerum provident itaque, doloremque reprehenderit porro adipisci ullam, repellat eveniet! Temporibus pariatur autem architecto ad sed optio quod placeat atque adipisci!
+            </p>
+        </div>
+
+        <div class="bordered overflow-scroll">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloremque et quasi perspiciatis minima molestiae consequuntur eos at alias sunt qui exercitationem officia libero eaque quisquam velit mollitia veniam corporis deleniti nulla delectus iure, earum quod! Odio laboriosam mollitia, molestias reiciendis sunt, tenetur provident voluptatum incidunt accusamus amet laborum accusantium?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus expedita quod magnam eaque asperiores autem, ipsum dignissimos temporibus eum cum tempore architecto omnis culpa esse recusandae non sapiente dicta. Hic incidunt sequi iusto nulla fugit reprehenderit distinctio perspiciatis, maiores dolore, laborum nihil labore officia, autem vel enim quas. Quo corrupti dicta reiciendis earum quae pariatur sint maxime consequuntur repellendus rerum provident itaque, doloremque reprehenderit porro adipisci ullam, repellat eveniet! Temporibus pariatur autem architecto ad sed optio quod placeat atque adipisci!
+            </p>
+        </div>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aliquid qui sunt mollitia nihil fugit cumque culpa impedit dolore exercitationem laborum explicabo eos nostrum ex ducimus ad eaque, rem saepe. Magnam, cupiditate! Est tenetur cupiditate rem aliquid sit? Magnam odit alias sint similique! Omnis minus soluta ab unde officia illo!</p>
+        -->
+    </div>
+</body>
+</html>

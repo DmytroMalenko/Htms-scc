@@ -65,36 +65,102 @@
         }
 
 
-        .block1 {
-            margin: 30px;
-            background-color: rgb(135 45 98);
+        .block{
+            display: flex;
+            width: 700px;
+            height: 250px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text1{
+            position: absolute;
+            transition: 2s;
+            color: transparent;
+}
+
+        .block1, .block2 {
             width: 200px;
-            padding: 40px;
             height: 70px;
-            border: solid 5px rgb(101 17 66);
-        }
-
-        .block2 {
-            margin: 0px;
+            padding: 40px;
             background-color: rgb(135 45 98);
-            width: 200px;
-            padding: 40px;
-            height: 70px;
-            margin-right: 300px;
-            margin-top: -188px;
             border: solid 5px rgb(101 17 66);
+            transition: 2s;
+        }
+        .block:hover .left{
+            transform: skewY(10deg) translateX(-120px);
+        }
+        .block:hover .right{
+            transform: skewY(-10deg) translateX(120px);
         }
 
-        .float-right {
-            float: right;
+        .block:hover .text1{
+            color: black;
         }
 
-        .skew:hover {
-            transform: skew(20deg, 20deg);
-        }
-        .skew1:hover {
-            transform: skew(50deg, 30deg);
-        }
+
+
+
+
+
+
+
+    .card {
+    width: 700px;
+    height: 200px;
+    display: flex;
+    margin: 20px auto;
+    }
+
+.cardtext {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    }
+
+.cardtext h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    font-weight: normal;
+    }
+
+.cardtext::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: black;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cardimage {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cardimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.card:hover .cardtext::after {
+    opacity: 0.5;
+}
+
+.card:hover .cardimage img {
+    transform: scale(1.2);
+}
     </style>
 </head>
 <body>
@@ -111,36 +177,54 @@
     <div>
         <!-- Task 2 -->
         <p></p>
-        <div class="block1 skew1"></div>
-        <div class="block2 float-right skew"></div>
+        <div class="block">
+            <div class="block1 left"></div>
+            <div class="text1"><h1>HELLO</h1></div>
+            <div class="block2 right"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
     </div>
 
 
 
 
+<div>
+        <!-- Task 3 -->
+<div class="card">
+    <div class="cardtext">
+        <h2>HELLO, WORLD!</h2>
+    </div>
+
+    <div class="cardimage">
+        <img src="resurces/image.png" alt="">
+    </div>
+</div>
+
+<div class="card">
+    <div class="cardimage">
+        <img src="resurces/image.png" alt="">
+    </div>
+
+    <div class="cardtext">
+        <h2>HELLO, WORLD!</h2>
+    </div>
+</div>
+
+<div class="card">
+    <div class="cardtext">
+        <h2>HELLO, WORLD!</h2>
+    </div>
+
+    <div class="cardimage">
+        <img src="resurces/image.png" alt="">
+    </div>
+</div>
+</div>
+            
 
 
 
-
-
-
-
-
+</div>
 </body>
 </html>
 
