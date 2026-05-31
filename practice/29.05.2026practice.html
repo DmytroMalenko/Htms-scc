@@ -4,24 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            border: solid 1px black;
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            display: flex;
+            margin-right: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+
+        img {
+
+            width: 200px;
+            margin-bottom: 110px;
+        }
+
+        .text {
+            margin-top: -80px;
+            text-align: center;
+        }
+        
+        .red {
+            color: red;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px;
+            width: 80px;            
+            text-align: center;
+            border: none;
+            background-color: rgb(30 50 85);
+            color: white;
+            font-size: 16px;
+            display: block;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div class="flex">
         <!-- Task 1 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
+        <div class="container"><img style="height: 150px;" src="resurces/aston-martin-reveals.avif" alt=""><div class="text">Aston Martin Vantage GT3</div><div style="text-align: center;"><small>Powerful British GT3 race car.</small><div class="red">20$</div></div><p></p><button>Buy</button></div>
+        <div class="container"><img style="height: 150px;" src="resurces/car.jpg" alt=""><div class="text">BMW M4 GT3</div><div style="text-align: center;"><small>Modern car with high performance.</small><div class="red">30$</div></div><p></p><button>Buy</button></div>
+        <div class="container"><img style="height: 150px;" src="resurces/mclaren — копия.avif" alt=""><div class="text">McLaren 720S GT3</div><div style="text-align: center;"><small>Lightweight and fast GT3 race car.</small><div class="red">15$</div></div><p></p><button>Buy</button></div>
+    </div>
+    <div class="flex" style="text-align: center; margin-top: 10px;">
+        <div class="container"><img style="height: 120px;" src="resurces/racecar.webp" alt=""><div class="text">AMR26</div><div style="text-align: center;"><small>Formula 1 car built for speed and precision.</small><div class="red">45$</div></div><p></p><button>Buy</button></div>
+        <div class="container"><img style="height: 120px;" src="resurces/racecars.png" alt=""><div class="text">Ferrari 488 GT3</div><div style="text-align: center;"><small>Italian GT3 race car with excellent handling.</small><div class="red">24$</div></div><p></p><button>Buy</button></div>
+        <div class="container"><img style="height: 150px;" src="resurces/tron-legacy-designer.webp" alt=""><div class="text">Tron Legacy</div><div style="text-align: center;"><small>Futuristic concept car inspired by Tron.</small><div class="red">50$</div></div><p></p><button>Buy</button></div>
     </div>
     
 </body>
