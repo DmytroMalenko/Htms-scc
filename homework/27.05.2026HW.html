@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .img{
+        width: 200px;
+        border-bottom: 3px solid orange;
+        background-color: gray;
+        position: relative;
+        margin: 5px;
+    }
+
+    .img img{
+        width: 100%;
+        display: block;
+    }
+
+    .text{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        color: white;
+        background-color: rgba(7, 7, 7, 0.4);
+        display: none;
+    }
+
+    .text span{
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+    }
+    h3 {
+        margin-top: -10px;
+        background-color: orange;
+        text-align: center;
+    }
+    .img:hover .text{
+        display: block;
+    }   
+    .text{
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .img:hover .text{
+        opacity: 1;
+    }
+    .flex {
+        display: flex;
+    }
+    </style>
+</head>
+<body>
+
+
+        <!-- Task 1 -->
+<div class="flex">
+
+    <div class="img">
+        <img src="resurces/favorites.png" alt="">
+        <div class="text">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="resurces/favorites.png" alt="">
+        <div class="text">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="resurces/favorites.png" alt="">
+        <div class="text">
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</div>
+<div class="flex">
+
+    <div class="img">
+        <img src="resurces/favorites.png" alt="">
+        <div class="text">
+            <h3>Project 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="resurces/favorites.png" alt="">
+        <div class="text">
+            <h3>Project 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <div class="img">
+        <img src="resurces/favorites.png" alt="">
+        <div class="text">
+            <h3>Project 6</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
