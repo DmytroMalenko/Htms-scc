@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px white solid;
+            border-collapse: collapse;
+            padding: 25px;
+            color: white;
+        }
+
+        td {
+            border: none;
+            color: black;
+            text-align: center;
+        }
+
+        th {
+            border: none;
+        }
+
+        table {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+
+
+        tr:nth-child(odd) {
+            background-color: #ebebeb;
+        }
+        tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f0f0f0;
+        }
+            
+        td:nth-child(2n) {
+            background-color: #e6e6e6;
+        }
+
+        td:nth-child(6) {
+            background-color: #ebebeb;
+        }
+        tr:nth-child(4n-1) {
+            background-color: #d7d7d7;
+        }
+        tr:nth-child(4n+1) {
+            background-color: #d7d7d7;
+        }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        td:first-child {
+            text-align: left;
+        }
+        th:nth-child(1) {
+            background-color: #7987aa;
+        }
+        th:nth-child(2) {
+            background-color: #4f628d;
+        }
+        th:nth-child(3) {
+            background-color: #2f4173;
+        }
+        th:nth-child(4) {
+            background-color: #162954;
+        }
+        th:nth-child(5) {
+            background-color: #071538;
+        }
+        p {
+            font-size: 30px;
+        }
+        div {
+            margin-top: -30px;
+        }
+
+        button {
+            padding: 10px;
+            width: 80px;
+            background-color: #dbdbdb;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Choose your plan</th>
+                <th>starter<p>$10</p><div>per month</div></th>
+                <th>econom <p>$30</p><div>per month</div></th>
+                <th>standard <p>$59</p><div>per month</div></th>
+                <th>professional <p>$99</p><div>per month</div></th>
+            </tr>
+        </thead>
+        <tr>
+            <td>Amount of space</td>
+            <td>20GB</td>
+            <td>40GB</td>
+            <td>110GB</td>
+            <td>Unlimeted</td>
+        </tr>
+        <tr>
+            <td>Bandwidth per month</td>
+            <td>120GB</td>
+            <td>240GB</td>
+            <td>610GB</td>
+            <td>1300GB</td>
+        </tr>
+        <tr>
+            <td>Email accounts</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimeted</td>
+        </tr>
+        <tr>
+            <td>MySQL databases</td>
+            <td>1</td>
+            <td>15</td>
+            <td>60</td>
+            <td>Unlimeted</td>
+        </tr>
+        <tr>
+            <td>25h support</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>Support tickets per month</td>
+            <td>2</td>
+            <td>6</td>
+            <td>14</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>START</button></td>
+            <td><button>START</button></td>
+            <td><button>START</button></td>
+            <td><button>START</button></td>
+        </tr>
+        
+        
+    </table>
+</body>
+</html>

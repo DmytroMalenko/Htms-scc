@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .demo::first-line {
+            color: #f38a89;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 2px 2px 15px black;
+        }
+
+        .demo::first-letter {
+            font-size: 3em;
+            border: 1px black dashed;
+        }
+
+        .demo::selection {
+            color: #e5f389;
+            background-color: #7471ff;
+            text-shadow: 1px 1px 8px #a0aa5f;
+        }
+
+        a {
+            display: block;
+            font-size: 2em;
+            margin: 15px;
+        }
+
+        section {
+            padding: 0.5em;
+            margin: 0.7em;
+            border: black solid 2px;
+            border-radius: 5px;
+        }
+
+        p:first-child {
+            text-align: center;
+            text-transform: uppercase;
+        }
+        p:last-child {
+            margin-top: 0.3em;
+            font-size: 0.7em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p:nth-child(2) {
+            padding: 0.8em;
+            text-indent: 0.5em;
+        }
+
+        p:nth-last-child(2) {
+            padding: 0.8em;
+            text-indent: 0.5em;
+        }
+
+        td {
+            padding: 0.75em;
+            border-right: 0;
+            border-left: 0;
+            width: auto;
+        }
+
+        table, td {
+            width: 80%;
+            border: 1px black solid;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(odd) {
+            /* background-color: aliceblue; */
+            animation: odd-rows 5s infinite linear alternate-reverse;
+        }
+
+        tr:nth-child(even) {
+           /* background-color: aliceblue; */
+           animation: even-rows 5s infinite linear alternate-reverse;
+        }
+
+        @keyframes odd-rows {
+            from {
+                background-color: white;
+            }
+
+            50% {
+                background-color: aquamarine;
+            }
+            to {
+                background-color: white;
+            }
+        }
+
+        @keyframes even-rows {
+            from {
+                background-color: aquamarine;
+            }
+
+            50% {
+                background-color: white;
+            }
+            to {
+                background-color: aquamarine;
+            }
+        }
+
+
+        article:only-child {
+            background-color: #f38a89ad;
+        }
+
+        .menu {
+            list-style-type: none;
+        }
+
+        .menu-ithem:not(:last-child) {
+            border-bottom: 1px black solid;
+            margin-bottom: 5px;
+        }
+
+        #section3 {
+            display: none;
+        }
+
+        #section3:target {
+            display: block;
+            box-shadow: 5px 5px 15px #f38a89;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudoelements and psevdoclass</h1>
+    
+    <ul class="menu">
+        <li class="menu-ithem">Main</li>
+        <li class="menu-ithem">About us</li>
+        <li class="menu-ithem">Help</li>
+        <li class="menu-ithem">Contacts</li>
+    </ul>
+    <p lang="eu" class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aut et possimus sunt. Perspiciatis ullam natus neque repellat architecto cum.</p>
+    <a href="#section3">link</a>
+        <section>
+            <article>
+            </article>
+        </section>
+
+
+    <section>
+        <article>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ducimus?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cum reprehenderit maxime quibusdam soluta tenetur dolore libero eius illum fugiat!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dolor culpa impedit laborum, eligendi vero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis nisi, inventore ad perferendis saepe fuga enim harum tempore. Sapiente hic distinctio ex aspernatur illum, ad, eum quo dolore corrupti assumenda accusamus porro nam quisquam eaque perferendis quas odio molestias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam magni blanditiis soluta nulla dolores ad? Sit unde voluptate rerum necessitatibus quo ex inventore hic similique.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab itaque quas tempora voluptatum ut hic placeat cupiditate dolor, labore repudiandae ullam nisi, earum cumque recusandae sed optio sapiente rem doloribus! Ducimus, ex sequi minima velit autem quos. Quod, saepe.</p>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ducimus?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cum reprehenderit maxime quibusdam soluta tenetur dolore libero eius illum fugiat!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dolor culpa impedit laborum, eligendi vero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis nisi, inventore ad perferendis saepe fuga enim harum tempore. Sapiente hic distinctio ex aspernatur illum, ad, eum quo dolore corrupti assumenda accusamus porro nam quisquam eaque perferendis quas odio molestias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam magni blanditiis soluta nulla dolores ad? Sit unde voluptate rerum necessitatibus quo ex inventore hic similique.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab itaque quas tempora voluptatum ut hic placeat cupiditate dolor, labore repudiandae ullam nisi, earum cumque recusandae sed optio sapiente rem doloribus! Ducimus, ex sequi minima velit autem quos. Quod, saepe.</p>
+        </article>
+    </section>
+    <section id="section3">
+        <article>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ducimus?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cum reprehenderit maxime quibusdam soluta tenetur dolore libero eius illum fugiat!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dolor culpa impedit laborum, eligendi vero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis nisi, inventore ad perferendis saepe fuga enim harum tempore. Sapiente hic distinctio ex aspernatur illum, ad, eum quo dolore corrupti assumenda accusamus porro nam quisquam eaque perferendis quas odio molestias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam magni blanditiis soluta nulla dolores ad? Sit unde voluptate rerum necessitatibus quo ex inventore hic similique.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab itaque quas tempora voluptatum ut hic placeat cupiditate dolor, labore repudiandae ullam nisi, earum cumque recusandae sed optio sapiente rem doloribus! Ducimus, ex sequi minima velit autem quos. Quod, saepe.</p>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ducimus?</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam cum reprehenderit maxime quibusdam soluta tenetur dolore libero eius illum fugiat!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic dolor culpa impedit laborum, eligendi vero.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis nisi, inventore ad perferendis saepe fuga enim harum tempore. Sapiente hic distinctio ex aspernatur illum, ad, eum quo dolore corrupti assumenda accusamus porro nam quisquam eaque perferendis quas odio molestias!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam magni blanditiis soluta nulla dolores ad? Sit unde voluptate rerum necessitatibus quo ex inventore hic similique.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab itaque quas tempora voluptatum ut hic placeat cupiditate dolor, labore repudiandae ullam nisi, earum cumque recusandae sed optio sapiente rem doloribus! Ducimus, ex sequi minima velit autem quos. Quod, saepe.</p>
+        </article>
+    </section>
+
+
+    <table>
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            </td>
+        </tr>
+        <tr>
+            <td>
+                CELL 1
+            </td>
+            <td>
+                CELL 2
+            </td>
+            <td>
+                CELL 3
+            </td>
+            <td>
+                CELL 4
+            </td>
+
+
+
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+tr:nth-child(even) {
+            background-color: #ebebeb;
+        }
+        tr:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+            
+        td:nth-child(2n) {
+            background-color: #e6e6e6;
+        }
+
+        td:nth-child(6) {
+            background-color: #ebebeb;
+        }
+        tr:nth-child(4n-1) {
+            background-color: #d7d7d7;
+        }
+        tr:nth-child(4n+1) {
+            background-color: #d7d7d7;
+        }
+    
