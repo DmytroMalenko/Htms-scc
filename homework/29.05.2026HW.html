@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+        .border {
+            display: flex;
+            border: 2px solid rgb(0, 0, 0, 0.1);
+            width: 210px;
+            height: 350px;
+            border-radius: 10px;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.8s ease-in-out 0s;
+        }
+        .border:hover {
+            transform: scale(1.1);
+        }
+
+        .red {
+            display: flex;
+            width: 207px;
+            height: 0;
+            border: 3px solid #c33755;
+        }
+
+        .yellow {
+            display: flex;
+            width: 207px;
+            height: 0;
+            border: 3px solid #d7913c;
+        }
+
+        .text {
+            text-align: center;
+            font-weight: bold;
+            font-size: small;
+        }
+
+
+        .button {
+            margin-top: 20px;
+            height: 30px;
+            width: 80px;
+            background-color: #c33755;
+            color: white;
+            border: #c33755;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+
+        .button:hover {
+            background-color: darkred;
+        }
+
+
+        .title {
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        .float-left {
+            float: left;
+            margin: 10px;
+        }
+
+        .button-yellow {
+            margin-top: 20px;
+            height: 30px;
+            width: 80px;
+            background-color: #d7913c;
+            color: white;
+            border: #d7913c;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+        .button-yellow:hover {
+            background-color: darkgoldenrod;
+        }
+
+        .button-blue {
+            margin-top: 20px;
+            height: 30px;
+            width: 80px;
+            background-color: #286487;
+            color: white;
+            border: #286487;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+        .button-blue:hover {
+            background-color: darkslategray;
+        }
+
+        .blue {
+            display: flex;
+            width: 207px;
+            height: 0;
+            border: 3px solid #286487;
+        }
+
+        .button-green {
+            margin-top: 20px;
+            height: 30px;
+            width: 80px;
+            background-color: #5fb932;
+            color: white;
+            border: #5fb932;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+        .button-green:hover {
+            background-color: darkgreen;
+        }
+        .green {
+            display: flex;
+            width: 207px;
+            height: 0;
+            border: 3px solid #5fb932;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Task 1 -->
+        <div  class="border float-left">
+            <div class="title">ENTERPRISE</div>
+            <div class="red"></div>
+            <div style="margin: 30px; font-size: 30px;"><b>$69</b></div>
+            <div style="text-align: center; color: #cecece; margin: -35px;"><b>per month</b></div>
+            <p></p>
+            <div class="text" style="margin: 20px;">
+                <div>10GB disk space</div>
+                <p></p>
+                <div>100GB monthly bandwidth</div>
+                <p></p>
+                <div>20 email accounts</div>
+                <p></p>
+                <div>Unlimited subdoments</div>
+            </div>
+            <button class="button">BUY</button>
+        </div>
+
+
+
+        <div class="border float-left">
+            <div class="title">PROFESSIONAL</div>
+            <div class="yellow"></div>
+            <div style="margin: 30px; font-size: 30px;"><b>$29</b></div>
+            <div style="text-align: center; color: #cecece; margin: -35px;"><b>per month</b></div>
+            <p></p>
+            <div class="text" style="margin: 20px;">
+                <div>5GB disk space</div>
+                <p></p>
+                <div>60GB monthly bandwidth</div>
+                <p></p>
+                <div>10 email accounts</div>
+                <p></p>
+                <div>Unlimited subdoments</div>
+            </div>
+            <button class="button-yellow">BUY</button>
+        </div>
+
+
+        <div class="border float-left">
+            <div class="title">STANDARD</div>
+            <div class="blue"></div>
+            <div style="margin: 30px; font-size: 30px;"><b>$19</b></div>
+            <div style="text-align: center; color: #cecece; margin: -35px;"><b>per month</b></div>
+            <p></p>
+            <div class="text" style="margin: 20px;">
+                <div>3GB disk space</div>
+                <p></p>
+                <div>30GB monthly bandwidth</div>
+                <p></p>
+                <div>5 email accounts</div>
+                <p></p>
+                <div>Unlimited subdoments</div>
+            </div>
+            <button class="button-blue">BUY</button>
+        </div>
+
+
+        <div class="border float-left">
+            <div class="title">BASIC</div>
+            <div class="green"></div>
+            <div style="margin: 30px; font-size: 30px;"><b>$19</b></div>
+            <div style="text-align: center; color: #cecece; margin: -35px;"><b>per month</b></div>
+            <p></p>
+            <div class="text" style="margin: 20px;">
+                <div>1GB disk space</div>
+                <p></p>
+                <div>10GB monthly bandwidth</div>
+                <p></p>
+                <div>2 email accounts</div>
+                <p></p>
+                <div>Unlimited subdoments</div>
+            </div>
+            <button class="button-green">BUY</button>
+        </div>
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
