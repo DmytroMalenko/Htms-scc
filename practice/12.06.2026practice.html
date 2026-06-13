@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            max-width: auto;
+            background-color: #014242 ;
+            padding: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .header {
+            display: flex;
+            color: gray;
+            font-size: 14px;
+        }
+
+        main {
+            margin-top: 40px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main div {
+            margin-top: 5px;
+        }
+        footer {
+            margin-top: 50px;
+        }
+
+        .grid-container {
+            width: 80vw;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto auto auto; 
+            align-items: center;
+        }
+
+        @media screen and (max-width: 1000px) and (min-width: 600px) {   
+        .grid-container {
+                display: grid;
+                grid-template-columns: 120px 1fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                column-gap: 0px;
+                margin-top: -30px;
+                row-gap: 0px;
+                align-items: center;
+        }
+
+        .Image {
+        margin-top: 30px;
+        }
+        .Author {
+            grid-column: 3;
+            grid-row: 1;
+
+        }
+        .Comments {
+            grid-column: 2;
+            grid-row: 3;
+            margin-top: 15px;
+            margin-bottom: 45px;
+        }
+        .Published {
+            grid-column: 3;
+            grid-row: 3;
+            margin-top: -30px;
+        }
+        .Updated {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        .Geoff {
+            grid-column: 3;
+            grid-row: 2;
+            margin-top: -55px;
+        }
+        .go_to_comments {
+            grid-column: 2;
+            grid-row: 4;
+            margin-top: -70px;
+        }
+        .published_data {
+            grid-column: 3;
+            grid-row: 4; 
+            margin-top: -70px;
+        }
+        .updated_data {
+            grid-column: 2;
+            grid-row: 2;
+            margin-top: -55px;
+        }
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Task 1 -->
+    <div class="header">
+        <div>Home /</div>
+        <div>Articles /</div>
+    </div>
+    <main>
+        <div>The Difference Between</div>
+        <div>Responsive and</div>
+        <div>Adaptive Design</div>
+    </main>
+    <footer>
+        
+        <div class="grid-container">
+            <div class="Image"><img src="resurces/Screenshot 2026-06-12 175930.png" alt=""></div>
+            <div class="Author" style="color: gray; font-size: 13px;">Author</div>
+
+            <div class="Comments" style="color: gray; font-size: 13px;">49 Comments</div>
+
+            <div class="Published" style="color: gray; font-size: 13px;">Published</div>
+            <div class="Updated" style="color: gray; font-size: 13px;">Updated</div>
+<div></div>
+            <div class="Geoff" style="color: white; font-size: 15px;">Geoff Graham</div>
+            <div class="go_to_comments" style="color: white; font-size: 15px;">Go to comments</div>
+            
+            <div class="published_data" style="color: white; font-size: 15px;">Nov 11,2018</div>
+            <div class="updated_data" style="color: white; font-size: 15px;">Nov 17,2018</div>
+
+        </div>
+    </footer>
+</body>
+</html>
