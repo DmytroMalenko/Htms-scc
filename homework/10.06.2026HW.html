@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            font-size: 14px;
+        }
+
+        img {
+            margin: 0px;
+            width: 220px;
+            display: flex;
+            margin: 10px;
+            border-radius: 10px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .block {
+            display: flex;
+            background-color: #37516c;
+            color: white;
+            width: 200px;
+            margin: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 12px;
+            padding: 10px;
+            margin-top: -10px;
+            justify-content: right;
+            text-align: right;
+        }
+        .float-right {
+            float: right;
+            margin-top: -150px;
+        }
+
+        .container {
+            width: 600px;
+        }
+
+        @media screen and (max-width: 800px) and (min-width: 600px){
+            .float-right {
+                float: none;
+                display: flex;
+                right: 200px;
+                justify-content: center;
+                flex-basis: 100%;
+                margin-top: 0;
+
+            }
+            img {
+                height: 150px;
+            }
+
+            .block {
+                display: flex;
+                margin-left: -230px;
+                margin-top: 160px;
+                height: 35px;
+                text-align: right;
+            }
+
+            body {
+                display: block;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+            }
+
+            .img2 {
+                height: 180px;
+                width: 250px;
+            }
+            .block2 {
+                width: 230px;
+                margin-top: 190px;
+                margin-left: -260px;
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+
+            .float-right {
+            display: flex;
+            flex-direction: column;
+
+            }
+            .block {
+                width: 550px;
+                margin-left: 10px;
+                margin-top: -10px;
+
+            }
+            .img {
+                height: 300px;
+                width: 570px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Task 2 -->
+    <div>
+        <h3>Cat</h3>
+        <p class="container">
+            The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated species in the family Felidae and often referred to as the domestic cat to distinguish it from wild members of the family. The cat is either a house cat, kept as a pet, or a feral cat, freely ranging and avoiding human contact.[5] A house cat is valued by humans for companionship and for its ability to hunt rodents. About 60 cat breeds are recognized by various cat registries.
+        </p>
+        <div class="float-right">
+            <img class="img" src="resurces/cat1.jpg" alt="">
+            <div class="block">A Tabby cat in snowy weather</div>
+            <img class="img2 img" src="resurces/cat2.jpg" alt="">
+            <div class="block block2">The hooked papillae on a cat's tongue act like a hairbrush to help clean and detangle fur.</div>
+        </div>
+        <p>
+            Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes, sharp teeth and retractable claws adapted to killing small prey. They are predators who are most active at dawn and dusk (crepuscular). Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. Compared to humans, they see better in the dark (they see in near total darkness) and have a better sense of smell, but poorer color vision. Cats, despite being solitary hunters, are a social species. Cat communication includes the use of vocalizations including mewing, purring, trilling, hissing, growling and grunting as well as cat-specific body language.[7] Cats also communicate by secreting and perceiving pheromones.
+        </p>
+        <p>
+            Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two to five kittens. Domestic cats can be bred and shown as registered pedigreed cats, a hobby known as cat fancy. Failure to control the breeding of pet cats by spaying and neutering, as well as abandonment of pets, has resulted in large numbers of feral cats worldwide, contributing to the extinction of entire bird species, and evoking population control.
+        </p>
+    </div>
+        
+</body>
+</html>
