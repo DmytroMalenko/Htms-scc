@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 80vw;
+            min-width: 500px;
+            max-width: 1200px;
+            border: solid black 2px;
+            border-radius: 10px;
+            background-color: bisque;
+            margin: 0.5em auto;
+            padding: 0.7em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4em;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        textarea {
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        <input type="text" placeholder="What are you looking for?">
+        <button type="submit">Search</button>
+        <button type="reset">Reset</button>
+        </div>
+    </form>
+
+    <form>
+        <div>
+            <label for="username">Name:</label>
+            <br>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email">
+        </div>
+        <div>  
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <label for="about">About us: </label>
+            <br>
+            <textarea id="about" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="agree">Agree with personal politics</label>
+            <input type="checkbox" id="agree" required>
+        </div>
+        <fieldset>
+            <legend>Be: </legend>
+            <input type="radio" name="gender" value="male" id="genderM">
+            <label for="genderM">Man</label>
+            <input type="radio" name="gender" value="male" id="genderF">
+            <label for="genderF">Women</label>
+            <input type="radio" name="gender" value="male" id="genderO">
+            <label for="genderO">Another</label>
+        </fieldset>
+        <div>
+            <label for="fav-pizza">Favourite pizza: </label>
+            <br>
+            <select name="fav-pizza" id="fav-pizza">
+                <option value="pepperoni">Pepperoni</option>
+                <option value="margarita">Margarita</option>
+                <option value="quattro-formaggio">Vier chees</option>
+            </select>
+        </div>
+        <div>
+            <label for="fav - style of game: "></label>
+            <br>
+            <input type="text" name="genre" id="fav-genre" list="genres">
+            <datalist id="genres">
+                <option value="horror">Horror</option>
+                <option value="shooter">Shooter</option>
+                <option value="rogue-like">Rogue-like</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="birth-date">Date of born: </label>
+            <br>
+            <input type="date" name="birth-date" id="">
+        </div>
+        <div>
+            <label for="tall">Your tall: </label>
+            <br>
+            <input type="number" name="tall" id="tall" max="300" min="1">
+        </div>
+        <div>
+            <button type="submit">Log in</button>
+        </div>
+    </form>
+</body>
+</html>

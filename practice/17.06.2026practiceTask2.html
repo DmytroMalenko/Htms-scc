@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: url("resurces/idyllic-tropical-beach.jpeg");
+            display: flex;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+        }
+
+
+        form {
+            height: 500px;
+            width: 800px;
+            color: white;
+            border: 3px solid black;
+            background: transparent;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+        }
+
+        h3 {
+            margin: 30px;
+            font-size: 23px;
+        }
+
+        .line {
+            margin: 30px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 250px;
+            height: 30px;
+            margin: 5px;
+            display: inline-block;
+
+        }
+        label {
+            display: inline-block;
+            width: 200px;
+            padding-left: 30px;
+        }
+
+        .input {
+            width: 523px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        .phone {
+            width: 160px;
+        }
+
+        select {
+            margin-left: 5px;
+            width: 530px;
+            height: 30px;
+        }
+
+        .message {
+            height: 100px;
+            width: 525px;
+        }
+
+        .block {
+            vertical-align: top;
+        }
+        hr {
+            width: 90%;
+        }
+        .button {
+            text-align: right;
+            padding-right: 35px;
+            margin-top: 20px;
+
+            
+        }
+
+        button {
+            color: white;
+            height: 30px;
+            width: 530px;
+            border: white 1px solid;
+            font-weight: bold;
+            background-color: transparent;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+       
+    <form>
+        <div>
+            <h3>Contact form</h3>
+            <div class="line">Please fill in your information and we'll be sending your order.</div>
+        </div>
+
+        <div>
+            <label for="username">Your name</label>
+            <input type="text" id="firstname" placeholder="first name">
+            <input type="text" id="lastname" placeholder="last name">
+        </div>
+        <div>
+            <label for="email">Your email</label>
+            <input class="input" type="email" id="email" placeholder="your_mail@mail.com">
+        </div>
+        <div>
+            <label for="phone">Phone *</label>
+            <input class="phone" type="phone" id="phone" placeholder="000" required>
+            <input class="phone" type="phone" id="phone" placeholder="000" required>
+            <input class="phone" type="phone" id="phone" placeholder="0000" required>
+        </div>
+        <div>
+            <label for="option">Message subject *</label>
+            <select name="option" id="option">
+                <option value="option" required>Other</option>
+                <option value="text" required>Text</option>
+                <option value="message" required>Message</option>
+            </select>
+        </div>
+        <div>
+            <label class="block" for="message">Message *</label>
+            <input class="message" type="message" name="" id="message" required>
+            <hr>
+        </div>
+        <div class="button">
+            <button>SUBMIT FORM</button>
+        </div>
+    </form>
+</body>
+</html>

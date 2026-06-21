@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form {
+            padding-bottom: 30px;
+        }
+        header {    
+            background-color: #0f4371;
+            color: white;
+            display: flex;
+            padding: 20px;
+            font-size: 22px;
+            justify-content: space-between;
+            padding-left: 100px;
+        }
+        .float-right {
+            padding-right: 100px;
+            font-size: 16px;
+        }
+
+        fieldset {
+            padding: 20px;
+            padding-left: 100px;
+        }
+
+        input {
+            border-radius: 5px;
+            padding: 10px;
+            border: #e3e3e3 1px solid;
+        }
+
+
+        .location {
+            background-image: url(resurces/location.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 20px;
+        }
+
+
+        .calendar {
+            background-image: url(resurces/calendar.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 20px;
+        }
+
+
+        select {
+            border-radius: 5px;
+            padding: 10px;
+            border: #e3e3e3 1px solid;
+        }
+
+        .button {
+            width: 150px;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            background-color: #0f4371;
+        }
+
+        aside {
+            display: block;
+            margin-left: 100px;
+            height: 500px;
+            border-radius: 5px;
+            padding: 10px;
+            padding-left: 50px;
+            border: 1px solid #e3e3e3;
+            background-color: white;
+            width: 300px;
+            box-shadow: 0 0 5px rgba(100, 90, 90, 0.9);
+        }
+
+        h4 {
+            color: #0f4371;
+        }
+
+
+        .input {
+            width: 40px;
+        }
+
+
+        .block {
+            display: flex;
+            gap: 10px;
+        }
+
+        .block > div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin-top: -520px;
+            margin-left: 500px;
+            height: 750px;
+            border-radius: 5px;
+            border: 1px solid #e3e3e3;
+            background-color: white;
+            width: 600px;
+            box-shadow: 0 0 5px rgba(100, 90, 90, 0.9);
+        }
+
+        main .title {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .tr {
+            color: #0f4371;
+            text-align: center;
+            width: 100%;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid darkgray;
+            border-top: 1px solid darkgray;
+            font-size: 14px; 
+        }
+        th {
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+
+        td {
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            width: 100px;
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            background-color: #0f4371;
+        }
+
+        .container {
+            color: grey;
+            position: relative;
+            top: -15px;
+        }
+        hr {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>Flights - Search List</div>
+        <div class="float-right">Home / Flights Search List</div>
+    </header>
+
+
+
+    <form>
+
+            <fieldset>
+                <input type="radio" name="oneway" value="oneway" id="oneway">
+                <label for="oneway">One Way</label>
+                <input type="radio" name="roundtrip" value="roundtrip" id="roundtrip">
+                <label for="roundtrip">Round Trip</label>
+            </fieldset>
+           <div style="padding-left: 100px;">
+                <input type="text" placeholder="From" class="location">
+                <input type="text" placeholder="To" class="location">
+                <input type="text" placeholder="Depart Date" class="calendar">
+                <input type="text" placeholder="Return Date" class="calendar">
+                <select name="class" id="classes">
+                    <option value="Econom">Econom Class</option>
+                    <option value="Premium Economy">Premium Economy</option>
+                    <option value="Business Class">Business Class</option>
+                    <option value="First Class">First Class</option>
+                </select>
+                <button class="button" type="search">Search</button>
+            </div>
+    </form>
+
+
+    <aside>
+        <div>
+            <h3>Filter</h3>
+                <h4>No. of Stops</h4>
+                <input type="checkbox" name="stop" value="stop" id="non">
+                <label for="non">Non Stop</label>
+                <br>
+                <input type="checkbox" name="1stop" value="1stop" id="1stop">
+                <label for="1stop">1 Stop</label>
+                <br>
+                <input type="checkbox" name="2+stops" value="2+stops" id="2+stops">
+                <label for="2+stops">2+ Stops</label>
+        </div>
+        
+        <h4>Price</h4>
+
+        <div class="block">
+            <div>
+                <span>Min:</span>
+                <div>
+                    <input class="input" type="text" placeholder="0">
+                    <label for="">$ -</label>
+                </div>
+            </div>
+                   
+            <div>
+                <span>Max:</span>
+                <div>
+                    <input class="input" type="text" placeholder="1000">
+                    <label for="">$</label>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h4>Airlines</h4>
+            <div>
+                <input type="checkbox">
+                <label for="">Asiana Airlines</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">American Airlines</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">Air Canada</label>   
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">Air India</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">Jet Airways</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">Spicejet</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">IndiGo</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">Multiple Airlines</label>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h3 class="title">Dehli to Sydney</h3>
+        <table>
+            <thead>
+                <tr class="tr">
+                    <th>Airlines</th>
+                    <th>Departure</th>
+                    <th>Duration</th>
+                    <th>Arrival</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+
+
+
+
+            <tbody>
+                <tr>
+                    <td>IndiGo</td>
+                    <td>23:30</td>
+                    <td>18h 55m</td>
+                    <td>18:15</td>
+                    <td>$980</td>
+                    <td><button>Book</button></td>
+                </tr>
+
+                <tr class="container">
+                    <td>6E-2489</td>
+                    <td>Dehli</td>
+                    <td>Non Stop</td>
+                    <td>Sydney</td>
+                    <td></td>
+                    <td style="color: #0f4371;">Flight Details</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>IndiGo</td>
+                    <td>23:30</td>
+                    <td>18h 55m</td>
+                    <td>18:15</td>
+                    <td>$980</td>
+                    <td><button>Book</button></td>
+                </tr>
+
+                <tr class="container">
+                    <td>6E-2489</td>
+                    <td>Dehli</td>
+                    <td>Non Stop</td>
+                    <td>Sydney</td>
+                    <td></td>
+                    <td style="color: #0f4371;">Flight Details</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>IndiGo</td>
+                    <td>23:30</td>
+                    <td>18h 55m</td>
+                    <td>18:15</td>
+                    <td>$980</td>
+                    <td><button>Book</button></td>
+                </tr>
+
+                <tr class="container">
+                    <td>6E-2489</td>
+                    <td>Dehli</td>
+                    <td>Non Stop</td>
+                    <td>Sydney</td>
+                    <td></td>
+                    <td style="color: #0f4371;">Flight Details</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>IndiGo</td>
+                    <td>23:30</td>
+                    <td>18h 55m</td>
+                    <td>18:15</td>
+                    <td>$980</td>
+                    <td><button>Book</button></td>
+                </tr>
+
+                <tr class="container">
+                    <td>6E-2489</td>
+                    <td>Dehli</td>
+                    <td>Non Stop</td>
+                    <td>Sydney</td>
+                    <td></td>
+                    <td style="color: #0f4371;">Flight Details</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>IndiGo</td>
+                    <td>23:30</td>
+                    <td>18h 55m</td>
+                    <td>18:15</td>
+                    <td>$980</td>
+                    <td><button>Book</button></td>
+                </tr>
+
+                <tr class="container">
+                    <td>6E-2489</td>
+                    <td>Dehli</td>
+                    <td>Non Stop</td>
+                    <td>Sydney</td>
+                    <td></td>
+                    <td style="color: #0f4371;">Flight Details</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6"><hr></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #e45d44;
+        }
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            text-align: center;
+            width: 400px;
+        }
+        .button {
+            background-color: #32a75a;
+            color: white;
+            border: none;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            width: 300px;
+            font-weight: bold;
+            border-bottom: 3px solid #09752e;
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            background-color: lightgreen;
+            transform: scale(1.1);
+        }
+        div {
+            height: 400px;
+            background-color: #e6e4e4;
+            margin-top: 0;
+            margin: 30px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+        }
+
+        p {
+            padding: 50px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: -30px;
+        }
+        input {
+            border: none;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            width: 280px;
+        }
+        .image {
+            width: 100px;
+            margin-top: -50px;
+        }
+
+        a {
+            color: crimson; 
+        }
+        span {
+            display: block;
+            margin-left: 130px;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .button1 {
+            background-color: #3b579d;
+            margin-left: 50px;
+            color: white;
+            border: none;
+            text-align: center;
+            width: 150px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+
+        .button2 {
+            background-color: #1ca1f1;
+            color: white;
+            border: none;
+            text-align: center;
+            width: 150px;
+            margin-left: 10px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+            
+        }
+
+        .button1:hover {
+            transform: scale(1.1);
+        }
+
+        .button2:hover {
+            transform: scale(1.1);
+        }
+
+        .img {
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <img class="image" src="resurces/account.png" alt="">
+            <p>Member Login</p>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <br>
+            <button class="button" type="submit">Login</button>
+            <br>
+            <a href="">Forgot password?</a>
+        </div>
+    </form>
+    <span>... or login with: </span>
+    <button class="button1 "><img class="img" src="resurces/Facebook_logo_(square).png" alt="">Facebook</button>
+    <button class="button2"><img class="img" src="resurces/twitter-6860915_1280.png" alt="">Twitter</button>
+    
+</body>
+</html>
