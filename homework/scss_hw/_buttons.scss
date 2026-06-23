@@ -1,0 +1,21 @@
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.btn-buy {
+    @extend .btn;
+    background-color: $success;
+}
+
+.btn-cancel {
+    @extend .btn;
+    background-color: $danger;
+}
+
+.btn-info {
+    @extend .btn;
+    background-color: $primary;
+}

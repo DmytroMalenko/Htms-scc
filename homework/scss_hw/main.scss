@@ -1,0 +1,19 @@
+@import "variables";
+@import "_mixins";
+@import "_buttons";
+@import "_cards";
+
+body {
+    background-color: $danger;
+    color: $secondary;
+}
+
+
+.glassmorphism {
+    @include glassmorphism;
+}
+
+.product-card {
+    @include glassmorphism;
+}
+
