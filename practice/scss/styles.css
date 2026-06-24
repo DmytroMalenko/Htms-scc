@@ -73,4 +73,20 @@ menu {
 
 .block:hover .div {
   display: block;
+}
+
+.btn1 {
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #007bff;
+}
+
+.btn2 {
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ff5733;
 }/*# sourceMappingURL=styles.css.map */

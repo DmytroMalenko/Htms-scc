@@ -1,4 +1,5 @@
 @import "_variables";
+@import "_mixins";
 
 body {
     margin: 0;
@@ -78,4 +79,15 @@ menu {
 }
 .block:hover .div {
     display: block;
+}
+
+.btn1 {
+    @include button;
+    background-color: $mixin-bk1;
+}
+
+
+.btn2 {
+    @include button;
+    background-color: $mixin-bk2;
 }
