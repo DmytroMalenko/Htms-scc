@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 100px;
+        }
+
+
+        
+        form {
+            display: flex;
+            justify-content:  flex-start;
+            flex-wrap: wrap;
+            gap: 50px;
+            min-height: 700px;
+            border: 3px solid lightgray;
+            padding: 30px;
+            box-shadow: 0px 1px 20px  rgba(0,0,0, 0.7);
+        }
+
+        p {
+            font-size: 24px;
+        }
+
+        .input {
+            border: none;
+            background-color: #f5f5f5;
+            border-bottom: 1px solid black;
+            padding: 10px;
+            font-size: 18px;
+            width: 350px;
+        }
+
+
+        img {
+            height: 80px;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .float-right {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            padding: 10px;
+            height: 50px;
+           
+        }
+
+        hr {
+            margin-top: -140px;
+        }
+        .checkbox {
+            width: 100%;
+            margin-top: 20px;
+
+        }
+
+        button {
+            color: white;
+            background-color: #008787;
+            border: none;
+            padding: 20px;
+            width: 250px;
+            margin-left: 0;
+            margin: 0;
+            border-radius: 5px;
+            box-shadow: 0px 1px 20px  rgba(0,0,0, 0.3);
+            transition: 0.5s;
+        }
+
+        button:hover {
+            background-color: #074d4d;
+            transform: scale(1.1);
+        }
+
+
+    @media screen and (min-width: 900px) {
+        form {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+        }
+    }
+
+
+
+
+
+
+    @media screen and (max-width: 900px) and (min-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 30px;
+        height: 100%;
+        height: auto;
+    }
+
+    .right {
+        margin-left: 0;
+    }
+
+    hr {
+        margin-top: -100px;
+    }
+
+
+    button {
+        margin-left: -900px;
+    }
+
+    .checkbox {
+        margin-top: 70px;
+    }
+}
+
+
+
+
+@media  screen and (max-width: 709px) {
+    body {
+        padding: 15px;
+    }
+
+    form {
+        width: 100%;
+        min-height: 1100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+    .block {
+        flex-wrap: wrap;
+    }
+    .block .input {
+        width: 100% ;
+        margin: 10px ;
+    }
+    .input {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .checkbox {
+        
+        margin-bottom: 300px;
+    }
+
+    .float-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    button {
+        width: 180px;
+        margin: 0;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .right .input {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px 0;
+}
+
+
+
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+    <div>
+        <div>
+            <p>Registration form</p>
+        </div>
+
+        <div class="block">
+            <label for=""><img src="resurces/Screenshot 2026-06-26 173940.png" alt=""></label>
+            <input class="input width" type="text" name="" id="" placeholder="Username">
+        </div>
+
+        <div class="block">
+            <label for="email"><img src="resurces/Screenshot 2026-06-26 174719.png" alt=""></label>
+            <input class="input width" type="text" name="" id="" placeholder="Email address" required>
+        </div>
+
+        <div class="block">
+            <label for=""><img src="resurces/Screenshot 2026-06-26 174752.png" alt=""></label>
+            <input class="input" type="text" name="" id="password" placeholder="Password" required>
+            <input class="input pass" type="text" name="" id="confirmpassword" placeholder="Confirm password" required>
+        </div>
+    </div>
+
+    <div class="right">
+        <div>
+            <p>Personal details</p>
+        </div>
+
+        <div>
+            <input class="input" type="text" name="" id="" placeholder="First name">
+            <input class="input" type="text" name="" id="Last name" placeholder="Last name">
+        </div>
+        <div>
+            <select class="input" style="width: 250px; margin-right: 20px; margin-left: 20px; margin-top: 61px;" name="" id="">
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Other</option>
+            </select>
+            <input class="input" style="width: 250px;" type="text" name="" id="" placeholder="mm/dd/yyyy">
+        </div>
+    </div>
+
+    <div class="checkbox ">
+        <div>
+            <input type="checkbox" name="" id="" required>
+            <label for="">I want to receive mews and special offers</label>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="" id="" required>
+            <label for="">I agree with the Terms and Conditions</label>
+        </div>
+    </div>
+        
+        <div class="float-right">
+            <button>SUBMIT</button>
+        </div>
+    </form>
+    
+    <hr>
+
+    
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        form {
+            background-color: #9bcdcd;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 60px;
+            width: 600px;
+
+        }
+
+        .div {
+            color: white;
+            font-size: 18px;
+            background-color: #d76423;
+            width: 400px;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: -80px;
+            padding: 15px 20px 15px 90px;
+        }
+
+        label {
+            color: #78908a;    
+            padding: 10px;
+            
+        }
+
+        .input1 {
+            background-color: #a5d2d2;
+            border: none;
+            padding: 10px;
+            width: 370px;
+            border-bottom: 1px solid black;
+            font-size: 18px;
+            margin-top: -20px;
+        }
+
+        .padding {
+            padding: 10px;
+        }
+
+
+
+        .input  {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin: 10px;
+            flex-wrap: wrap;
+            
+        }
+        label {
+            display: block;
+            margin-top: 10px;  
+        }
+
+        .input input {
+            background-color: #a5d2d2;
+            border: none;
+            padding: 10px;
+            width: 100px;
+            margin-top: -20px;
+            border-bottom: 1px solid black;
+            font-size: 18px;
+        }
+
+
+        .float-right {
+            float: right;
+            margin-top: -37px;
+            margin-right: 350px;
+        }
+
+        .float-right1 {
+            float: right;
+            margin-top: -185px;
+            margin-right: -40px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="div">CREDIT CARD DETAILS</div>
+
+        <div class="padding">
+            <label for="cardnumber">Card Number</label>
+            <br>
+            <input class="input1" type="text" name="cardnumber" id="cardnumber" placeholder="1234 5678 9012 3456">
+        </div>
+
+        <div class="padding">
+            <label for="card">Name On Card</label>
+            <br>
+            <input class="input1" type="text" name="card" id="card" placeholder="Name Surname">
+        </div>
+            <label class="label" for="card">Expire Date</label>
+            <label class="label float-right" for="card">CSV No.</label>
+
+        <div class="padding input">
+            <input type="text" name="card" id="numcard" placeholder="02">
+            <input type="text" name="card" id="year" placeholder="2017">
+            <input type="text" name="card" id="numtwo" placeholder="***">
+        </div>
+
+        <div class="float-right1">
+            <img style="border-bottom-right-radius: 10px ;" src="resurces/Screenshot 2026-06-25 220142.png" alt="">
+        </div>
+
+        
+    </form>
+</body>
+</html>
