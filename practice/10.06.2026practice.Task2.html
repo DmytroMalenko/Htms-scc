@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        h4 {
+            color: white;
+            background-color:  #37516c;
+            padding: 10px 0 0 0;
+            margin: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .div {
+            padding: 10px;
+            border-top: 1px solid gray;
+        }
+
+        .block {
+            border-radius: 10px;
+            background-color: #b0c4df ;
+            border: none;
+        }
+
+        aside {
+            width: 300px;
+            display: flex;
+            flex-shrink: 0;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        main {
+            width: calc(100% - 300px);
+        }
+
+
+        @media screen and (max-width: 1000px) and (min-width: 700px){
+
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                flex-direction: row;
+                padding-top: 20px;
+                width: 100%;
+            }
+
+            .block {
+                flex: 1;
+            }
+
+            main {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 799px) {
+            .container {
+                flex-direction: column;
+            }
+
+            aside {
+                flex-direction: column;
+                width: 100%;
+                gap: 20px;
+            }
+
+            .block {
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <main>
+        <h3>Introduction</h3>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dicta ad saepe quas suscipit, obcaecati, officia, perspiciatis aperiam magnam amet molestiae velit excepturi. Optio doloribus doloremque quisquam assumenda asperiores! Velit rerum soluta libero obcaecati illum aliquid ut cupiditate hic unde autem ad ab quia quo, consequuntur accusantium commodi animi tenetur aut mollitia error a eius. Unde ducimus eaque nisi, quaerat ipsa nostrum iste, laudantium ipsam sapiente ex, voluptas distinctio veniam voluptatem autem quidem vitae. Facere, libero aliquid? Voluptatibus, quod. Ut commodi consequatur reprehenderit sit, quasi esse quia, ea deleniti voluptatibus repudiandae exercitationem incidunt sapiente, voluptates repellendus saepe. Voluptatibus quia optio molestias itaque natus ab aspernatur inventore magni. Accusantium nisi sequi dolor, maiores numquam tempore vitae ex possimus, praesentium vero illum, similique quos recusandae? Incidunt, aut. Dicta, nam? Corporis voluptate optio, consectetur quia minus ullam repellat beatae aliquam. Dignissimos consectetur reprehenderit hic eius. Veniam commodi molestias at ex amet pariatur ad.
+        </div>
+
+        <h3>Additional information</h3>
+        
+        <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo culpa reiciendis dolorem consectetur explicabo non eveniet aliquam debitis distinctio optio pariatur, odit assumenda hic iure, adipisci, facilis architecto cupiditate ducimus obcaecati incidunt animi. Accusamus delectus expedita, tempora reprehenderit ipsa nihil cum deserunt iusto! Nulla ullam ea error sunt totam qui unde dicta reiciendis veniam, dolor quos necessitatibus hic aut sed esse nemo distinctio quas suscipit, tempora deleniti rerum quidem magnam obcaecati consequatur! Numquam cupiditate suscipit explicabo et saepe dignissimos maiores alias reprehenderit quis, neque nemo repellendus a molestias reiciendis, nihil quibusdam. Aperiam, consequatur iusto veniam cupiditate molestias ut corporis velit?
+        </div>
+        <p></p>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis aspernatur excepturi debitis dolore quos. Repellendus neque in maiores quod iusto excepturi fugiat iure sit perspiciatis ratione esse fuga, et officiis. Molestiae libero consequuntur, expedita asperiores voluptatibus facere quis assumenda magnam, perferendis vitae aut alias iste temporibus doloribus ab maxime recusandae.
+        </div>
+    </main>
+
+
+
+    <aside>
+            <div class="block">
+                <h4>Actions</h4>
+                    <div class="div">Integer ut magna cursus eros</div>
+                    <div class="div">Fusce imperdiet sapien a sem</div>
+                    <div class="div">Sed ac ligula in neque tincidunt</div>
+            </div>
+
+
+            <div class="block">
+                <h4>Plans</h4>
+                <div class="div">Morbi at diam suscipit mauris</div>
+                <div class="div">Donec vel odio malesuada</div>
+            </div>
+        </aside>
+
+    </div>
+</body>
+</html>

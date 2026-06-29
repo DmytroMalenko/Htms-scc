@@ -11,20 +11,34 @@
         font-family: Arial, Helvetica, sans-serif;;
     }
     .container {
-        width: 1100px;
+
+        width: 100%;
         padding: 10px;
+        margin: 20px auto;
         display: flex;
         border: 1px solid  lightgray;
-         box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.6);
     }
     .border {
         padding: 7px;
         display: flex;
-        height: 20px;
-        width: 200px;
+        height: 30px;
+        align-items: center;
         border: 1px lightgray solid;
         border-bottom-color: #3c5a9a;
         margin-top: 10px;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .block1 {
+        display: flex;
+        align-items: center;
     }
 
     button {
@@ -33,40 +47,134 @@
         border: none;
         width: 150px;
         height: 35px;
-        margin-left: 30px;
+        margin-left: 10px;
         padding: 5px;
         margin-top: 10px;
+        font-weight: bold;
     }
 
     h3 {
-        
         display: flex;
-        margin-top: 80px;
-        margin-left: -710px;
+        
 
     }
 
     .text {
         
         display: flex;
-        margin-top: 80px;
-        margin-left: -710px;
-        margin-top: 140px;
+        flex-wrap: wrap;
+
+    }
+
+    .width1 {
+        width: 170px;
+    }
+
+    .width2 {
+        display: flex;
+        flex: 1;
+        gap: 10px;
+        justify-content: flex-end;
+        white-space: nowrap;
+        align-items: center;
+        padding-left: 150px;
+    }
+
+    .button-block {
+        display: flex;
+        width: 100%;
+    }
+
+    .computer {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+
+    @media screen and (max-width: 800px)   {
+
+    .container {
+        flex-direction: column;
+        max-width: 600px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px 0;
+    }
+
+    .block1 {
+        display: flex;
+        width: 100%;
+    }
+
+    .width1 {
+        width: 40%;
+        border: 1px solid #3c5a9a;
+        border-right: none;
+
+    }
+
+    .width2 {
+        border: 1px solid #3c5a9a;
+        flex: 1;
+        padding-left: 40px;
+        justify-content: flex-end;
+        border-left: none;
+    }
+
+    h3,
+    .text {
+        margin-top: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    .computer {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 100%;
+        height: 35px;
+        margin-top: 20px;
+        background-color: #3c5a9a;
+        color: white;
+        border: none;
+        font-weight: bold;
+    }
     }
 </style>
 <body>
-    <div>
-        <!-- Task 1 -->
+
+    <!-- Task 1 -->
         <div class="container">
             <img style="margin-right: 20px; margin-top: 10px;" src="resurces/loading.png" alt="">
-                    <p></p>
-                    <div class="border" style="background-color: #d0d6e2; border-left-color: #3c5a9a;">UPLOADING 40%</div>
-                    <div class="border" style="justify-content: flex-end; width: 300px; border-right-color: #3c5a9a;">About 23 minutes remaining</div>
-                    <div><button>DONE</button></div>
-                    <div><h3>Title of video</h3></div>
-                    <p></p>
-                    <div class="text">*Your video is still uploading. Please keep this page open untilit's done.</div>
+                
+            <div class="block">
+                <div class="block1">
+                    <div class="border width1" style="background-color: #d0d6e2; border-left-color: #3c5a9a;">UPLOADING 40%</div>
+                    <div class="border width2" style=" border-right-color: #3c5a9a;">About 23 minutes remaining</div>
+                    <button class="computer">DONE</button>
                 </div>
-    </div>
+
+                <h3>Title of video</h3>
+
+                <div class="text">
+                    *Your video is still uploading. Please keep this page open untilit's done.
+                </div>
+                
+                <button class="mobile">DONE</button>  
+            </div>
+        </div>    
 </body>
 </html>
