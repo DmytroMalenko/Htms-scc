@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-slate-200">
+<div class="flex m-10 flex-col md:flex-row justify-center items-center ">
+  <div class="relative z-20 bg-gradient-to-b from-violet-600 to-blue-700 text-white w-80 border rounded-4xl h-100 md:rounded-2xl">
+    <div class=" text-center flex flex-col">
+      <div class="p-5">Your Result</div>
+
+      <div class="w-50 h-50 rounded-full bg-gradient-to-b from-violet-800 to-blue-600  mx-auto flex flex-col items-center justify-center">
+        <div class="font-bold text-7xl">76</div>
+        <div class="text-sm text-mist-300">of 100</div>
+      </div>
+    </div>
+
+    <div class="text-center flex flex-col">
+      <div class="font-bold text-xl p-5">Great</div>
+      <div class="text-sm">You scored higher than 65% of the people who have taken these tests.</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="relative z-10 w-80 rounded-2xl rounded-l-none h-100  font-bold border border-white bg-white -mt-7 md:mt-0 md:-ml-6 rounded-2xl  md:rounded-l-none p-10">
+    <div class="text-2xl mb-6">Summary</div>
+
+
+  <div class="flex flex-col gap-3 max-w-[280px] mx-auto">
+    <div class="text-rose-400 p-2 rounded-2xl bg-rose-50 flex justify-between">
+      <div class="flex items-center gap-2">
+        <img src="./assets/images/icon-reaction.svg" alt="">
+        <span>Reaction</span> 
+      </div>
+        <span class="text-black">80 <span class="text-gray-400">/ 100</span></span>
+    </div>
+
+
+    <div class="text-yellow-400 p-2 rounded-2xl bg-yellow-50 flex justify-between">
+      <div class="flex items-center gap-2">
+      <img src="./assets/images/icon-memory.svg" alt="">
+      <span>Memory</span> 
+      </div>
+      <span class="text-black">92 <span class="text-gray-400"> / 100</span> </span>
+    </div>
+
+
+    <div class="text-emerald-400 p-2 rounded-2xl bg-emerald-50 flex justify-between">
+      <div class="flex items-center gap-2">
+      <img  src="./assets/images/icon-verbal.svg" alt="">
+      <span>Verbal</span> 
+    </div>
+      <span class="text-black">61 <span class="text-gray-400"> / 100</span></span>
+    </div>
+
+
+
+    <div class="text-indigo-600 p-2 rounded-2xl bg-indigo-50 flex justify-between">
+      <div class="flex items-center gap-2">
+        <img  src="./assets/images/icon-visual.svg" alt="">
+        <span>Visual</span> 
+      </div>
+      <span class="text-black">73 <span class="text-gray-400"> / 100</span></span>
+    </div>
+
+
+
+  </div>
+  <div class="w-full max-w-[240px] mx-auto mt-6">
+    <button class="w-full py-3 rounded-full bg-slate-700 text-white hover:bg-gradient-to-r hover:from-violet-600 hover:to-blue-700 transition">
+        Continue
+    </button>
+</div>
+</div>
+
+</body>
+</html>
